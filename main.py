@@ -2,5 +2,6 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+@app.get("/")
 def index():
-    return "Api en ejecución"
+    return {"Message" : "Hola, Mundo"}
